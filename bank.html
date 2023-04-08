@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inside bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-semibold text-center my-16">Welcome To Your 
+            <span class="text-cyan-400">Favorite Bank!!!</span>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 mx-auto text-white w-9/12">
+                <div class="rounded-xl bg-violet-500 p-8">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h4 class="text-6xl">$<span id="deposit-amount">00</span></h4>
+                </div>
+                <div class="rounded-xl bg-orange-500 p-8">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h4 class="text-6xl">$<span id="withdraw-amount">00</span></h4>
+                </div>
+                <div class="rounded-xl bg-green-500 p-8">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h4 class="text-6xl">$<span id="balance-total">1320</span></h4>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 mx-auto w-8/12 mt-12">
+                <div class="rounded-xl bg-yellow-400 p-8">
+                    <h4 class="text-3xl text-white">Please Deposit</h4>
+                    <input id="deposit-filed" class="block w-9/12 h-10 px-6 border-2 border-lime-400 mb-2 focus:outline-violet-600 mt-3" type="text" placeholder="Enter Your Amout" required>
+                    <button id="deposit-btn" class="bg-green-600 px-7 py-2 mt-2 rounded-md text-white hover:bg-violet-600">Submit</button>
+                </div>
+                <div class="rounded-xl bg-pink-500 p-8">
+                    <h4 class="text-3xl text-white">Please Withdraw</h4>
+                    <input id="withdraw-filed" class="block w-9/12 h-10 px-6 border-2 border-lime-400 mb-2 focus:outline-violet-600 mt-3" type="text" placeholder="Enter Your Amount" required>
+                    <button id="withdraw-btn" class="bg-blue-900 px-7 py-2 mt-2 rounded-md text-white hover:bg-gray-950">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="calculation.js"></script>
+</body>
+</html>
